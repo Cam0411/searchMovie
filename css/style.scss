@@ -1,0 +1,123 @@
+* 
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.header 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    background: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+ .search__box
+ {
+     margin-left: auto;
+     margin-right: auto;
+     max-width: 400px;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     cursor: pointer;
+    background: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+     .search 
+     {
+        padding: 3px 18px;
+        width: 80%;
+        border: none;
+        outline: none;
+     }
+     i 
+     {
+         padding: 5px;
+         color: #000;
+     }
+ }
+ .darkLightMode
+ {
+     position: absolute;
+     top: 10%;
+     right: 0;
+     padding: 15px;
+     font-size: 20px;
+     cursor: pointer;
+     .light 
+     {
+         display: none;
+     }
+     .light.display 
+     {
+         display: block;
+     }
+     .dark.hide 
+     {
+         display: none;
+     }
+ }
+}
+.container 
+{
+    margin-top: 150px;
+    .result 
+    {
+        text-align: center;
+        display: none;
+        font-size: 30px;
+        margin-bottom: 20px;
+        font-weight: 700;
+        span 
+        {
+            text-transform: capitalize;
+        }
+    }
+    
+    .result.display 
+    {
+        display: block;
+    }
+    .img__box
+    {
+        padding: 20px 15px;
+        text-align: center;
+        img 
+        {
+            width: 100%;
+            nav-left: auto;
+            margin-right: auto;
+            text-align: center;
+            border-radius: 24px;
+        }
+    }
+.title 
+{
+    text-align: center;
+    line-height: 28px;
+}
+}
+@media (max-width:700px) {
+    .header 
+    {
+     .darkLightMode
+     {
+         position: absolute;
+         top: 100%;
+         left: 0;
+         padding: 15px;
+         font-size: 20px;
+       
+     }
+    }
+}
